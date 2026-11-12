@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra a arte, a história, os museus e as tradições de Curitiba no Curitiba em Rota.">
+    <title>Cultura e Museus | Curitiba em Rota</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScripts/cultura.js" defer></script>
+</head>
+
+<body class="pagina-cultura">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">Pontos Turísticos</a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html" aria-current="page">Cultura e Museus</a>
+                <a href="roteiros.html">Roteiros Turísticos</a>
+                <a href="eventos.html">Eventos e Lazer</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cult5-hero">
+            <div class="container cult5-hero-grade">
+
+                <div class="cult5-hero-conteudo">
+                    <span class="cult5-selo">CULTURA E MUSEUS</span>
+
+                    <h1>Curitiba também é feita de histórias</h1>
+
+                    <p>
+                        Descubra a arte, a história e as tradições
+                        que fazem parte da identidade de Curitiba.
+                    </p>
+
+                    <a href="#museu-destaque"
+                       class="cult5-botao cult5-botao-primario">
+                        Começar a explorar →
+                    </a>
+                </div>
+
+                <div class="cult5-hero-foto">
+                    <img
+                        src="../Imagem/praca-do-japao.jpg"
+                        alt="Praça do Japão em Curitiba">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="museu-destaque" class="cult5-destaque container">
+
+            <div class="cult5-destaque-imagem">
+                <img
+                    src="../Imagem/images.mon.jpg"
+                    alt="Arquitetura do Museu Oscar Niemeyer">
+
+                <span class="cult5-etiqueta-foto">
+                    DESTAQUE DE CURITIBA
+                </span>
+            </div>
+
+            <div class="cult5-destaque-texto">
+
+                <span class="cult5-subtitulo">
+                    ✦ DESTAQUE DA CIDADE
+                </span>
+
+                <h2>Museu Oscar Niemeyer (MON)</h2>
+
+                <p>
+                    Conhecido como Museu do Olho, é um dos espaços
+                    culturais mais famosos de Curitiba. Sua arquitetura
+                    marcante e suas exposições fazem dele uma visita especial.
+                </p>
+
+                <div class="cult5-informacoes">
+
+                    <div class="cult5-info">
+                        <span>🎨</span>
+                        <div>
+                            <strong>Tipo</strong>
+                            <small>Arte e design</small>
+                        </div>
+                    </div>
+
+                    <div class="cult5-info">
+                        <span>📍</span>
+                        <div>
+                            <strong>Bairro</strong>
+                            <small>Centro Cívico</small>
+                        </div>
+                    </div>
+
+                    <div class="cult5-info">
+                        <span>✦</span>
+                        <div>
+                            <strong>Destaque</strong>
+                            <small>Arquitetura e exposições</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cult5-acoes">
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Museu+Oscar+Niemeyer+Curitiba"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cult5-botao cult5-botao-roxo">
+                        Ver no Google Maps
+                    </a>
+
+                    <button
+                        type="button"
+                        class="cult5-favorito cult5-favorito-destaque"
+                        data-favorito="mon"
+                        aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="explorar" class="cult5-exploracao container">
+
+            <div class="cult5-coluna-principal">
+
+                <div class="cult5-cabecalho-secao">
+                    <span class="cult5-subtitulo">EXPLORE CURITIBA</span>
+                    <h2>Explore os espaços culturais</h2>
+                    <p>
+                        Escolha uma categoria e descubra
+                        museus e memoriais da cidade.
+                    </p>
+                </div>
+
+                <div class="cult5-filtros"
+                     role="group"
+                     aria-label="Filtrar museus por categoria">
+
+                    <button type="button"
+                            class="cult5-filtro ativo"
+                            data-filtro="todos"
+                            aria-pressed="true">
+                        Todos
+                    </button>
+
+                    <button type="button"
+                            class="cult5-filtro"
+                            data-filtro="arte"
+                            aria-pressed="false">
+                        Arte
+                    </button>
+
+                    <button type="button"
+                            class="cult5-filtro"
+                            data-filtro="historia"
+                            aria-pressed="false">
+                        História
+                    </button>
+
+                    <button type="button"
+                            class="cult5-filtro"
+                            data-filtro="tradicoes"
+                            aria-pressed="false">
+                        Tradições
+                    </button>
+
+                </div>
+
+                <p id="cult5-contador"
+                   class="cult5-contador"
+                   aria-live="polite">
+                    6 locais encontrados
+                </p>
+
+                <div class="cult5-grade-museus">
+
+                    <article class="cult5-museu" data-categoria="arte">
+
+                        <img
+                            src="../Imagem/MOM.02.jpg"
+                            alt="Museu Oscar Niemeyer"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">ARTE</span>
+                            <h3>Museu Oscar Niemeyer</h3>
+                            <p>Arte, arquitetura e design.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="mon"
+                                aria-label="Favoritar Museu Oscar Niemeyer"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-museu" data-categoria="arte">
+
+                        <img
+                            src="../Imagem/Mercado-Municipal.jpg"
+                            alt="Museu Municipal de Arte"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">ARTE</span>
+                            <h3>Museu Municipal de Arte</h3>
+                            <p>Exposições e artistas.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="muma"
+                                aria-label="Favoritar Museu Municipal de Arte"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-museu" data-categoria="historia">
+
+                        <img
+                            src="../Imagem/museu-paranaense.jpg"
+                            alt="Museu Paranaense"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">HISTÓRIA</span>
+                            <h3>Museu Paranaense</h3>
+                            <p>História e memória do Paraná.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="museu-paranaense"
+                                aria-label="Favoritar Museu Paranaense"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-museu" data-categoria="historia">
+
+                        <img
+                            src="../Imagem/museu-do-holocausto.jpg"
+                            alt="Museu do Holocausto de Curitiba"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">HISTÓRIA</span>
+                            <h3>Museu do Holocausto</h3>
+                            <p>Educação, memória e direitos humanos.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="holocausto"
+                                aria-label="Favoritar Museu do Holocausto"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-museu" data-categoria="tradicoes">
+
+                        <img
+                            src="../Imagem/Memorial.ucraniano02.jpg"
+                            alt="Memorial Ucraniano no Parque Tingui"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">TRADIÇÕES</span>
+                            <h3>Memorial Ucraniano</h3>
+                            <p>Imigração e patrimônio cultural.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="ucraniano"
+                                aria-label="Favoritar Memorial Ucraniano"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-museu" data-categoria="tradicoes">
+
+                        <img
+                            src="../Imagem/Memorial-Paranista-Jardim-das-Esculturas.jpg"
+                            alt="Memorial Paranista de Curitiba"
+                            loading="lazy">
+
+                        <div class="cult5-museu-conteudo">
+                            <span class="cult5-categoria">TRADIÇÕES</span>
+                            <h3>Memorial Paranista</h3>
+                            <p>Arte e identidade paranaense.</p>
+
+                            <button
+                                type="button"
+                                class="cult5-favorito cult5-coracao"
+                                data-favorito="paranista"
+                                aria-label="Favoritar Memorial Paranista"
+                                aria-pressed="false">
+                                ♡
+                            </button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p id="cult5-favoritos-total"
+                   class="cult5-favoritos-total"
+                   aria-live="polite">
+                    Nenhum museu favoritado ainda.
+                </p>
+
+            </div>
+
+            <aside class="cult5-lateral">
+
+                <div class="cult5-tempo">
+
+                    <span class="cult5-subtitulo">NOSSA HISTÓRIA</span>
+
+                    <h2>A formação cultural de Curitiba</h2>
+
+                    <p class="cult5-tempo-intro">
+                        Conheça algumas influências
+                        que ajudaram a formar a cidade.
+                    </p>
+
+                    <div class="cult5-etapas">
+
+                        <article class="cult5-etapa">
+                            <span class="cult5-numero">1</span>
+                            <div>
+                                <h3>Povos originários</h3>
+                                <p>
+                                    A presença indígena e suas
+                                    contribuições culturais na região.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="cult5-etapa">
+                            <span class="cult5-numero">2</span>
+                            <div>
+                                <h3>Formação da cidade</h3>
+                                <p>
+                                    O desenvolvimento urbano e as
+                                    transformações históricas de Curitiba.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="cult5-etapa">
+                            <span class="cult5-numero">3</span>
+                            <div>
+                                <h3>Imigração e diversidade</h3>
+                                <p>
+                                    Diferentes comunidades contribuíram
+                                    com costumes, arquitetura e tradições.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="cult5-etapa">
+                            <span class="cult5-numero">4</span>
+                            <div>
+                                <h3>Curitiba contemporânea</h3>
+                                <p>
+                                    Museus, arte e preservação
+                                    do patrimônio cultural.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <div class="cult5-dica-lateral">
+                    <span>✦ DICA CULTURAL</span>
+                    <p>
+                        Antes de visitar um museu,
+                        consulte horários, ingressos
+                        e a necessidade de agendamento.
+                    </p>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section class="cult5-multimidia">
+
+            <div class="container">
+
+                <div class="cult5-cabecalho-secao">
+                    <span class="cult5-subtitulo">
+                        EXPERIMENTE A CULTURA
+                    </span>
+
+                    <h2>Curitiba em imagens e sons</h2>
+
+                    <p>
+                        Conheça mais sobre a cidade
+                        por meio de conteúdos multimídia.
+                    </p>
+                </div>
+
+                <div class="cult5-midia-grade">
+
+                    <article class="cult5-midia-card">
+
+                        <div class="cult5-midia-visual">
+
+
+
+<video
+    controls
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    width="270"
+    height="480">
+
+    <source
+        src="../Video/WhatsApp Video 2026-11-10 at 19.17.35.mp4"
+        type="video/mp4">
+
+    Seu navegador não suporta vídeo.
+</video>
+
+
+                        </div>
+
+                        <div class="cult5-midia-texto">
+                            <span class="cult5-subtitulo">ASSISTA</span>
+                            <h3>Vídeo cultural</h3>
+                            <p>
+                                Um passeio pela história,
+                                pela arte e pelos principais
+                                espaços culturais de Curitiba.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="cult5-midia-card">
+
+                        <div class="cult5-midia-audio">
+                            <span class="cult5-audio-simbolo">🎙️</span>
+                            <span>UMA CIDADE, MUITAS HISTÓRIAS</span>
+                        </div>
+
+                        <div class="cult5-midia-texto">
+                            <span class="cult5-subtitulo">OUÇA</span>
+                            <h3>Áudio narrado</h3>
+
+                            <p>
+                                Uma apresentação sobre a diversidade
+                                e a formação cultural de Curitiba.
+                            </p>
+
+                            <audio controls preload="metadata">
+                                <source
+                                    src="../Audio/WhatsApp Video 2026-11-11 at 10.53.47.mp3"
+                                    type="audio/mpeg">
+
+                                Seu navegador não suporta áudio.
+                            </audio>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="cult5-midia-observacao">
+                    Os conteúdos são reproduzidos diretamente
+                    no navegador quando os arquivos de mídia
+                    estão disponíveis.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="cult5-final">
+
+            <div class="container cult5-final-conteudo">
+
+                <span class="cult5-subtitulo">
+                    CONTINUE EXPLORANDO
+                </span>
+
+                <h2>Curitiba tem muito mais para descobrir</h2>
+
+                <p>
+                    Além da cultura e dos museus,
+                    conheça os parques, os pontos turísticos
+                    e os sabores da nossa cidade.
+                </p>
+
+                <div class="cult5-links-finais">
+                    <a href="parques.html">Explorar parques</a>
+                    <a href="pontos.turisticos.html">Pontos turísticos</a>
+                    <a href="gastronomia.html">Gastronomia</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Curitiba em Rota | Explore a cidade</p>
+    </footer>
+
+</body>
+ </html>

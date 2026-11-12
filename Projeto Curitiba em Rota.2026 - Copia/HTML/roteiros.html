@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Descubra roteiros turísticos para explorar Curitiba em um ou dois dias, com opções culturais e econômicas.">
+    <title>Roteiros Turísticos | Curitiba em Rota</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScripts/roteiros.js" defer></script>
+</head>
+
+<body class="pagina-roteiros">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">Pontos Turísticos</a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html">Cultura e Museus</a>
+                <a href="roteiros.html" aria-current="page">Roteiros Turísticos</a>
+                <a href="eventos.html">Eventos e Lazer</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="rot6-hero">
+            <div class="container rot6-hero-conteudo">
+                <span class="rot6-selo">
+                    PLANEJE SUA VISITA
+                </span>
+                <h1>
+                    Seu próximo passeio por Curitiba
+                    começa aqui
+                </h1>
+                <p>
+                    Não sabe por onde começar?
+                    Escolha um roteiro pronto e descubra
+                    lugares incríveis para visitar na cidade.
+                </p>
+                <a href="#roteiros"
+                   class="rot6-botao rot6-botao-claro">
+                    Explorar roteiros ↓
+                </a>
+            </div>
+        </section>
+
+        <section class="rot6-introducao container">
+            <span class="rot6-etiqueta">
+                DESCUBRA SEU PRÓXIMO DESTINO
+            </span>
+            <h2>
+                Um roteiro para cada tipo de passeio
+            </h2>
+            <p>
+                Seja para passar um fim de semana,
+                conhecer a história da cidade ou
+                aproveitar atrações econômicas,
+                temos algumas sugestões para você.
+            </p>
+
+            <div class="rot6-beneficios">
+                <div class="rot6-beneficio">
+                    <span>🗓️</span>
+                    <strong>Organize seu tempo</strong>
+                    <small>Roteiros de diferentes durações</small>
+                </div>
+                <div class="rot6-beneficio">
+                    <span>📍</span>
+                    <strong>Descubra lugares</strong>
+                    <small>Atrações conhecidas de Curitiba</small>
+                </div>
+                <div class="rot6-beneficio">
+                    <span>♡</span>
+                    <strong>Salve seus favoritos</strong>
+                    <small>Guarde seus roteiros preferidos</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="roteiros" class="rot6-secao-roteiros">
+            <div class="container">
+
+                <div class="rot6-cabecalho">
+                    <span class="rot6-etiqueta">
+                        ESCOLHA SEU ROTEIRO
+                    </span>
+                    <h2>Explore Curitiba do seu jeito</h2>
+                    <p>
+                        Use os filtros para encontrar
+                        o roteiro ideal para sua visita.
+                    </p>
+                </div>
+
+                <div class="rot6-filtros"
+                     role="group"
+                     aria-label="Filtrar roteiros">
+
+                    <button type="button"
+                            class="rot6-filtro ativo"
+                            data-filtro="todos"
+                            aria-pressed="true">
+                        Todos
+                    </button>
+
+                    <button type="button"
+                            class="rot6-filtro"
+                            data-filtro="curto"
+                            aria-pressed="false">
+                        1 dia
+                    </button>
+
+                    <button type="button"
+                            class="rot6-filtro"
+                            data-filtro="longo"
+                            aria-pressed="false">
+                        2 dias
+                    </button>
+
+                    <button type="button"
+                            class="rot6-filtro"
+                            data-filtro="economico"
+                            aria-pressed="false">
+                        Econômico
+                    </button>
+
+                    <button type="button"
+                            class="rot6-filtro"
+                            data-filtro="cultural"
+                            aria-pressed="false">
+                        Cultural
+                    </button>
+                </div>
+
+                <p id="rot6-resultado"
+                   class="rot6-resultado"
+                   aria-live="polite">
+                    4 roteiros encontrados
+                </p>
+
+                <div class="rot6-grade">
+
+                    <article class="rot6-card"
+                             data-categoria="curto">
+
+                        <div class="rot6-card-topo rot6-topo-dia">
+                            <span class="rot6-card-icone">☀️</span>
+                            <span class="rot6-tag">
+                                MAIS POPULAR
+                            </span>
+                            <h3>Curitiba em 1 dia</h3>
+                            <p>
+                                Um passeio pelos principais
+                                cartões-postais da cidade.
+                            </p>
+                        </div>
+
+                        <div class="rot6-card-corpo">
+                            <div class="rot6-detalhes-rapidos">
+                                <span>🕒 1 dia</span>
+                                <span>📍 4 paradas</span>
+                            </div>
+                            <p>
+                                Ideal para quem está visitando
+                                Curitiba pela primeira vez
+                                e quer conhecer atrações famosas.
+                            </p>
+
+                            <details class="rot6-detalhes">
+                                <summary>Ver roteiro completo</summary>
+                                <div class="rot6-detalhes-conteudo">
+                                    <h4>Ordem sugerida</h4>
+
+                                    <ol>
+                                        <li>
+                                            <strong>Jardim Botânico</strong>
+                                            <span>Comece o passeio pelos jardins e pela estufa.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Museu Oscar Niemeyer</strong>
+                                            <span>Conheça a arquitetura e as exposições.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Ópera de Arame</strong>
+                                            <span>Explore um dos espaços mais marcantes da cidade.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Parque Tanguá</strong>
+                                            <span>Termine o dia apreciando a paisagem.</span>
+                                        </li>
+                                    </ol>
+
+                                    <a
+                                        href="https://www.google.com/maps/dir/?api=1&amp;origin=Jardim+Botanico+Curitiba&amp;destination=Parque+Tangua+Curitiba&amp;waypoints=Museu+Oscar+Niemeyer+Curitiba%7COpera+de+Arame+Curitiba"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="rot6-link-mapa">
+                                        Ver trajeto no Google Maps
+                                    </a>
+                                </div>
+                            </details>
+
+                            <button type="button"
+                                    class="rot6-favorito"
+                                    data-roteiro="um-dia"
+                                    aria-pressed="false">
+                                ♡ Salvar roteiro
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="rot6-card"
+                             data-categoria="longo">
+
+                        <div class="rot6-card-topo rot6-topo-dois">
+                            <span class="rot6-card-icone">🧳</span>
+                            <span class="rot6-tag">
+                                FIM DE SEMANA
+                            </span>
+                            <h3>Curitiba em 2 dias</h3>
+                            <p>
+                                Mais tempo para conhecer
+                                as diferentes atrações.
+                            </p>
+                        </div>
+
+                        <div class="rot6-card-corpo">
+                            <div class="rot6-detalhes-rapidos">
+                                <span>🕒 2 dias</span>
+                                <span>📍 6 paradas</span>
+                            </div>
+                            <p>
+                                Uma opção para aproveitar
+                                parques, cultura, arquitetura
+                                e momentos de descanso.
+                            </p>
+
+                            <details class="rot6-detalhes">
+                                <summary>Ver roteiro completo</summary>
+                                <div class="rot6-detalhes-conteudo">
+                                    <h4>Dia 1 — Parques e paisagens</h4>
+
+                                    <ol>
+                                        <li>
+                                            <strong>Jardim Botânico</strong>
+                                            <span>Conheça a estufa e os jardins.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Parque Barigui</strong>
+                                            <span>Aproveite a área verde e as trilhas.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Parque Tanguá</strong>
+                                            <span>Visite o mirante e os jardins.</span>
+                                        </li>
+                                    </ol>
+
+                                    <h4>Dia 2 — Cultura e história</h4>
+
+                                    <ol>
+                                        <li>
+                                            <strong>Museu Oscar Niemeyer</strong>
+                                            <span>Explore arte e arquitetura.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Centro Histórico</strong>
+                                            <span>Passeie pela região do Largo da Ordem.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Ópera de Arame</strong>
+                                            <span>Conheça esse espaço cultural.</span>
+                                        </li>
+                                    </ol>
+
+                                    <a
+                                        href="https://www.google.com/maps/search/?api=1&amp;query=atracoes+turisticas+Curitiba"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="rot6-link-mapa">
+                                        Explorar atrações no Maps
+                                    </a>
+                                </div>
+                            </details>
+
+                            <button type="button"
+                                    class="rot6-favorito"
+                                    data-roteiro="dois-dias"
+                                    aria-pressed="false">
+                                ♡ Salvar roteiro
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="rot6-card"
+                             data-categoria="economico">
+
+                        <div class="rot6-card-topo rot6-topo-economico">
+                            <span class="rot6-card-icone">🌿</span>
+                            <span class="rot6-tag">
+                                AO AR LIVRE
+                            </span>
+                            <h3>Roteiro Econômico</h3>
+                            <p>
+                                Aproveite atrações gratuitas
+                                ou de baixo custo.
+                            </p>
+                        </div>
+
+                        <div class="rot6-card-corpo">
+                            <div class="rot6-detalhes-rapidos">
+                                <span>🕒 1 dia</span>
+                                <span>📍 4 paradas</span>
+                            </div>
+                            <p>
+                                Um roteiro para passear
+                                sem gastar muito, aproveitando
+                                alguns dos espaços públicos da cidade.
+                            </p>
+
+                            <details class="rot6-detalhes">
+                                <summary>Ver roteiro completo</summary>
+                                <div class="rot6-detalhes-conteudo">
+                                    <h4>Ordem sugerida</h4>
+
+                                    <ol>
+                                        <li>
+                                            <strong>Passeio Público</strong>
+                                            <span>Caminhe por um dos parques tradicionais da cidade.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Centro Histórico</strong>
+                                            <span>Conheça ruas, construções e praças.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Parque Barigui</strong>
+                                            <span>Aproveite as áreas verdes e a caminhada.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Parque Tanguá</strong>
+                                            <span>Admire a paisagem e o mirante.</span>
+                                        </li>
+                                    </ol>
+
+                                    <p class="rot6-aviso">
+                                        Considere os custos de transporte
+                                        e alimentação durante o passeio.
+                                    </p>
+
+                                    <a
+                                        href="https://www.google.com/maps/search/?api=1&amp;query=parques+gratuitos+Curitiba"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="rot6-link-mapa">
+                                        Explorar parques no Maps
+                                    </a>
+                                </div>
+                            </details>
+
+                            <button type="button"
+                                    class="rot6-favorito"
+                                    data-roteiro="economico"
+                                    aria-pressed="false">
+                                ♡ Salvar roteiro
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="rot6-card"
+                             data-categoria="cultural">
+
+                        <div class="rot6-card-topo rot6-topo-cultural">
+                            <span class="rot6-card-icone">🎨</span>
+                            <span class="rot6-tag">
+                                ARTE E HISTÓRIA
+                            </span>
+                            <h3>Roteiro Cultural</h3>
+                            <p>
+                                Descubra a história,
+                                a arte e as tradições de Curitiba.
+                            </p>
+                        </div>
+
+                        <div class="rot6-card-corpo">
+                            <div class="rot6-detalhes-rapidos">
+                                <span>🕒 1 dia ou mais</span>
+                                <span>📍 4 paradas</span>
+                            </div>
+                            <p>
+                                Para quem gosta de museus,
+                                patrimônio histórico
+                                e manifestações culturais.
+                            </p>
+
+                            <details class="rot6-detalhes">
+                                <summary>Ver roteiro completo</summary>
+                                <div class="rot6-detalhes-conteudo">
+                                    <h4>Ordem sugerida</h4>
+
+                                    <ol>
+                                        <li>
+                                            <strong>Museu Paranaense</strong>
+                                            <span>Conheça aspectos da história do Paraná.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Centro Histórico</strong>
+                                            <span>Explore edifícios e lugares históricos.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Museu Oscar Niemeyer</strong>
+                                            <span>Visite exposições e admire a arquitetura.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Memorial Ucraniano</strong>
+                                            <span>Conheça parte da herança cultural dos imigrantes.</span>
+                                        </li>
+                                    </ol>
+
+                                    <p class="rot6-aviso">
+                                        Confira os horários e a necessidade
+                                        de agendamento antes da visita.
+                                    </p>
+
+                                    <a href="cultura.html"
+                                       class="rot6-link-mapa">
+                                        Conhecer a página Cultura e Museus
+                                    </a>
+                                </div>
+                            </details>
+
+                            <button type="button"
+                                    class="rot6-favorito"
+                                    data-roteiro="cultural"
+                                    aria-pressed="false">
+                                ♡ Salvar roteiro
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <p id="rot6-favoritos-total"
+                   class="rot6-favoritos-total"
+                   aria-live="polite">
+                    Nenhum roteiro salvo ainda.
+                </p>
+            </div>
+        </section>
+
+        <section class="rot6-dicas container">
+            <div class="rot6-dicas-texto">
+                <span class="rot6-etiqueta">
+                    ANTES DE SAIR
+                </span>
+                <h2>
+                    Algumas dicas para aproveitar melhor
+                    seu passeio
+                </h2>
+                <p>
+                    Os roteiros são sugestões.
+                    Você pode adaptar a ordem dos lugares
+                    conforme seu tempo e suas preferências.
+                </p>
+            </div>
+
+            <div class="rot6-dicas-grade">
+                <div class="rot6-dica">
+                    <span>🌦️</span>
+                    <h3>Confira o clima</h3>
+                    <p>
+                        Leve uma blusa e verifique
+                        a previsão antes de sair.
+                    </p>
+                </div>
+                <div class="rot6-dica">
+                    <span>🚗</span>
+                    <h3>Planeje o transporte</h3>
+                    <p>
+                        Considere o trânsito e o tempo
+                        de deslocamento entre atrações.
+                    </p>
+                </div>
+                <div class="rot6-dica">
+                    <span>🎟️</span>
+                    <h3>Verifique os horários</h3>
+                    <p>
+                        Alguns museus podem exigir
+                        ingresso ou agendamento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="meu-roteiro" class="rot6-personalizado">
+            <div class="container">
+                <div class="rot6-personalizado-cabecalho">
+                    <span class="rot6-etiqueta">
+                        SEU PASSEIO, SUAS ESCOLHAS
+                    </span>
+                    <h2>Crie seu próprio roteiro</h2>
+                    <p>
+                        Escolha os lugares que deseja conhecer,
+                        organize seu passeio e salve seu planejamento.
+                    </p>
+                </div>
+
+                <div class="rot6-personalizado-grade">
+                    <form id="rot6-formulario"
+                          class="rot6-formulario">
+
+                        <h3>Planeje seu passeio</h3>
+
+                        <label for="rot6-nome">Nome do roteiro</label>
+                        <input
+                            type="text"
+                            id="rot6-nome"
+                            placeholder="Ex.: Meu domingo em Curitiba"
+                            maxlength="70"
+                            required>
+
+                        <div class="rot6-formulario-linha">
+                            <div>
+                                <label for="rot6-data">
+                                    Data do passeio
+                                </label>
+                                <input type="date" id="rot6-data">
+                            </div>
+                            <div>
+                                <label for="rot6-periodo">
+                                    Período
+                                </label>
+                                <select id="rot6-periodo">
+                                    <option value="Dia inteiro">Dia inteiro</option>
+                                    <option value="Manhã">Manhã</option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Noite">Noite</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <label for="rot6-lugares">
+                            Lugares que quero visitar
+                        </label>
+                        <textarea
+                            id="rot6-lugares"
+                            rows="5"
+                            maxlength="1500"
+                            placeholder="Escreva um lugar por linha. Ex.:
+Jardim Botânico
+Museu Oscar Niemeyer
+Parque Tanguá"
+                            required></textarea>
+
+                        <label for="rot6-observacoes">
+                            Observações (opcional)
+                        </label>
+                        <textarea
+                            id="rot6-observacoes"
+                            rows="3"
+                            maxlength="500"
+                            placeholder="Ex.: Levar água e verificar os horários."></textarea>
+
+                        <button
+                            type="submit"
+                            class="rot6-salvar-personalizado">
+                            ♡ Salvar meu roteiro
+                        </button>
+
+                        <p id="rot6-mensagem"
+                           class="rot6-mensagem"
+                           role="status"
+                           aria-live="polite"></p>
+                    </form>
+
+                    <div class="rot6-meus-roteiros">
+                        <h3>Meus roteiros salvos</h3>
+                        <p class="rot6-descricao-salvos">
+                            Seus planejamentos aparecerão aqui.
+                        </p>
+
+                        <div id="rot6-lista-salvos"
+                             class="rot6-lista-salvos">
+                            <p class="rot6-vazio">
+                                Você ainda não criou nenhum roteiro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rot6-final">
+            <div class="container">
+                <span class="rot6-etiqueta">
+                    CONTINUE DESCOBRINDO
+                </span>
+                <h2>Encontre mais lugares para visitar</h2>
+                <p>
+                    Explore outras páginas do nosso guia
+                    e conheça mais atrações de Curitiba.
+                </p>
+
+                <div class="rot6-links-finais">
+                    <a href="parques.html">Parques</a>
+                    <a href="pontos.turisticos.html">Pontos Turísticos</a>
+                    <a href="gastronomia.html">Gastronomia</a>
+                    <a href="cultura.html">Cultura e Museus</a>
+                    <a href="roteiros.html">Roteiros Turísticos</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Curitiba em Rota | Explore a cidade</p>
+    </footer>
+
+</body>
+</html>

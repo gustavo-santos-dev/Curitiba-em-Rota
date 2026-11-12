@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Avalie o Curitiba em Rota e compartilhe sua opinião sobre nosso guia turístico.">
+    <title>Contato e Avaliação | Curitiba em Rota</title>
+
+        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+
+        <script src="../Bootstrap/js/bootstrap.bundle.min.js" defer></script>
+        <script src="../JavaScripts/contato.js" defer></script>
+</head>
+
+<body class="pagina-contato">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">
+                    Pontos Turísticos
+                </a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html">Cultura e Museus</a>
+                <a href="roteiros.html">Roteiros</a>
+                <a href="eventos.html">Eventos e Lazer</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html" aria-current="page">
+                    Contato
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="ct10-hero">
+            <div class="container ct10-hero-grade">
+
+                <div class="ct10-hero-texto">
+                    <span class="ct10-selo">
+                        SUA OPINIÃO IMPORTA
+                    </span>
+
+                    <h1>
+                        O que você achou do
+                        Curitiba em Rota?
+                    </h1>
+
+                    <p>
+                        Conte como foi sua experiência,
+                        compartilhe sugestões e ajude
+                        a tornar nosso guia ainda melhor.
+                    </p>
+
+                    <a href="#avaliar"
+                       class="ct10-botao-claro">
+                        Fazer minha avaliação ↓
+                    </a>
+                </div>
+
+                <div class="ct10-hero-quadro">
+                    <span class="ct10-quadro-icone">
+                        💬
+                    </span>
+
+                    <h2>Queremos ouvir você!</h2>
+
+                    <p>
+                        Sua avaliação ajuda a identificar
+                        os pontos positivos e as melhorias
+                        que podemos realizar no site.
+                    </p>
+
+                    <div class="ct10-quadro-estrelas">
+                        ★ ★ ★ ★ ★
+                    </div>
+
+                    <small>
+                        Compartilhe sua experiência
+                    </small>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ct10-intro container">
+            <span class="ct10-etiqueta">
+                PARTICIPE
+            </span>
+
+            <h2>Ajude nosso guia a evoluir</h2>
+
+            <p>
+                O Curitiba em Rota foi desenvolvido
+                para reunir informações e facilitar
+                a descoberta dos atrativos da cidade.
+                Sua opinião pode ajudar a melhorar
+                a experiência de navegação.
+            </p>
+
+            <div class="ct10-beneficios">
+
+                <article>
+                    <span>⭐</span>
+                    <h3>Avalie o site</h3>
+                    <p>
+                        Escolha uma nota de 1 a 5 estrelas.
+                    </p>
+                </article>
+
+                <article>
+                    <span>💡</span>
+                    <h3>Dê sugestões</h3>
+                    <p>
+                        Conte o que poderia ser melhorado.
+                    </p>
+                </article>
+
+                <article>
+                    <span>💬</span>
+                    <h3>Compartilhe sua opinião</h3>
+                    <p>
+                        Registre sua experiência com o guia.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="avaliar" class="ct10-avaliacao">
+            <div class="container">
+
+                <div class="ct10-titulo-secao">
+                    <span class="ct10-etiqueta">
+                        FALE COM O GUIA
+                    </span>
+
+                    <h2>Deixe sua avaliação</h2>
+
+                    <p>
+                        Preencha o formulário e registre
+                        o que achou do Curitiba em Rota.
+                    </p>
+                </div>
+
+                <div class="ct10-avaliacao-grade">
+
+                    <form id="ct10-formulario"
+                          class="ct10-formulario needs validation">
+
+                        <h3>Conte sua experiência</h3>
+
+                        <label for="ct10-nome">
+                            Seu nome
+                        </label>
+
+                        <input type="text"
+                                    id="ct10-nome"
+                                    name="nome"
+                                    class="form-control"
+                                    minlength="3"
+                                    maxlength="60"
+                                    pattern="[A-Za-zÀ-ÿ ]{3,60}"
+                                    placeholder="Digite seu nome"
+                                    autocomplete="name"
+                                    required>
+
+                        <label for="ct10-email">Seu e-mail</label>
+
+                          <input type="email"
+                              id="ct10-email"
+                              name="email"
+                              class="form-control"                    
+                              maxlength="120"
+                              placeholder="exemplo@email.com"
+                              autocomplete="email"
+                              required>
+                        <label for="ct10-assunto">
+                            Assunto
+                        </label>
+                            <select id="ct10-assunto"
+                                name="assunto"
+                                class="form-select"
+                                required>
+
+                            <option value="">
+                                Selecione um assunto
+                            </option>
+
+                            <option value="Elogio">
+                                Elogio
+                            </option>
+
+                            <option value="Sugestão">
+                                Sugestão
+                            </option>
+
+                            <option value="Problema encontrado">
+                                Problema encontrado
+                            </option>
+
+                            <option value="Opinião geral">
+                                Opinião geral
+                            </option>
+                        </select>
+
+                        <fieldset class="ct10-estrelas-campo">
+
+                            <legend>
+                                Qual nota você dá para o site?
+                            </legend>
+
+                            <div class="ct10-estrelas"
+                                 id="ct10-estrelas">
+
+                                <button type="button"
+                                        class="ct10-estrela"
+                                        data-nota="1"
+                                        aria-label="Avaliar com 1 estrela"
+                                        aria-pressed="false">
+                                    ★
+                                </button>
+
+                                <button type="button"
+                                        class="ct10-estrela"
+                                        data-nota="2"
+                                        aria-label="Avaliar com 2 estrelas"
+                                        aria-pressed="false">
+                                    ★
+                                </button>
+
+                                <button type="button"
+                                        class="ct10-estrela"
+                                        data-nota="3"
+                                        aria-label="Avaliar com 3 estrelas"
+                                        aria-pressed="false">
+                                    ★
+                                </button>
+
+                                <button type="button"
+                                        class="ct10-estrela"
+                                        data-nota="4"
+                                        aria-label="Avaliar com 4 estrelas"
+                                        aria-pressed="false">
+                                    ★
+                                </button>
+
+                                <button type="button"
+                                        class="ct10-estrela"
+                                        data-nota="5"
+                                        aria-label="Avaliar com 5 estrelas"
+                                        aria-pressed="false">
+                                    ★
+                                </button>
+
+                            </div>
+
+                            <p id="ct10-nota-texto">
+                                Nenhuma estrela selecionada
+                            </p>
+
+                        </fieldset>
+
+                        <label for="ct10-comentario">
+                            Seu comentário
+                        </label>
+
+                        <textarea id="ct10-comentario"
+                                name="comentario"
+                                class="form-control"
+                                rows="6"
+                                minlength="10"
+                                maxlength="1000"
+                                placeholder="Conte o que você gostou ou o que podemos melhorar..."
+                                required></textarea>
+                        <div class="ct10-contador-texto">
+                            <span id="ct10-caracteres">
+                                0 / 1000 caracteres
+                            </span>
+                        </div>
+
+                        <p class="ct10-privacidade">
+                            Suas avaliações serão armazenadas
+                            somente neste navegador. Este
+                            formulário não envia mensagens
+                            para um servidor ou e-mail.
+                        </p>
+
+                       <button type="submit"
+                            class="ct10-enviar btn btn-primary">
+                        ⭐ Salvar minha avaliação
+                       </button>
+                        <p id="ct10-mensagem"
+                           class="ct10-mensagem"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                    <aside class="ct10-resumo">
+
+                        <div class="ct10-resumo-topo">
+                            <span>📊</span>
+                            <h3>Resumo das avaliações</h3>
+
+                            <p>
+                                Confira as notas registradas
+                                neste navegador.
+                            </p>
+                        </div>
+
+                        <div class="ct10-nota-geral">
+
+                            <strong id="ct10-media">
+                                —
+                            </strong>
+
+                            <span id="ct10-media-estrelas"
+                                  class="ct10-media-estrelas">
+                                ☆☆☆☆☆
+                            </span>
+
+                            <small id="ct10-total">
+                                Nenhuma avaliação ainda
+                            </small>
+
+                        </div>
+
+                        <div class="ct10-resumo-info">
+                            <h4>O que você pode avaliar?</h4>
+
+                            <ul>
+                                <li>
+                                    Organização das informações
+                                </li>
+                                <li>
+                                    Aparência e navegação
+                                </li>
+                                <li>
+                                    Utilidade das páginas
+                                </li>
+                                <li>
+                                    Recursos interativos
+                                </li>
+                            </ul>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ct10-depoimentos">
+            <div class="container">
+
+                <div class="ct10-titulo-secao">
+                    <span class="ct10-etiqueta">
+                        COMENTÁRIOS
+                    </span>
+
+                    <h2>Avaliações registradas</h2>
+
+                    <p>
+                        Veja os comentários que foram
+                        salvos neste navegador.
+                    </p>
+                </div>
+
+                <div id="ct10-lista-avaliacoes"
+                     class="ct10-lista-avaliacoes"
+                     aria-live="polite">
+
+                    <p class="ct10-vazio">
+                        Ainda não existem avaliações.
+                        Seja o primeiro a deixar sua opinião!
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ct10-sobre container">
+
+            <div class="ct10-sobre-grade">
+
+                <div>
+                    <span class="ct10-etiqueta">
+                        SOBRE NOSSO GUIA
+                    </span>
+
+                    <h2>Conheça o Curitiba em Rota</h2>
+
+                    <p>
+                        O Curitiba em Rota é um projeto
+                        acadêmico criado para apresentar
+                        atrações turísticas, parques,
+                        cultura, gastronomia e experiências
+                        disponíveis na cidade.
+                    </p>
+
+                    <p>
+                        Nosso objetivo é oferecer uma
+                        navegação simples, organizada
+                        e acessível para quem deseja
+                        conhecer melhor Curitiba.
+                    </p>
+                </div>
+
+                <div class="ct10-sobre-quadro">
+                    <span>🌎</span>
+
+                    <h3>Explore, descubra e planeje</h3>
+
+                    <p>
+                        Tudo o que você precisa para começar
+                        a descobrir Curitiba em um só lugar.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ct10-final">
+            <div class="container">
+
+                <span class="ct10-etiqueta">
+                    OBRIGADO PELA VISITA
+                </span>
+
+                <h2>Continue explorando Curitiba!</h2>
+
+                <p>
+                    Esperamos que o guia ajude você
+                    a descobrir novos lugares e aproveitar
+                    as experiências da cidade.
+                </p>
+
+                <div class="ct10-links-finais">
+
+                    <a href="index.html">
+                        Voltar ao início
+                    </a>
+
+                    <a href="roteiros.html">
+                        Explorar roteiros
+                    </a>
+
+                    <a href="planejamento.html">
+                        Planejar viagem
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Curitiba em Rota | Explore a cidade
+        </p>
+    </footer>
+
+</body>
+</html>

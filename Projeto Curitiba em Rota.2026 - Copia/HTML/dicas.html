@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Confira dicas de transporte, clima, segurança e passeios para visitar Curitiba.">
+    <title>Dicas para Visitantes | Curitiba em Rota</title>
+
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <script src="../Bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../JavaScripts/dicas.js" defer></script>
+</head>
+
+<body class="pagina-dicas">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">
+                    Pontos Turísticos
+                </a>
+                <a href="gastronomia.html">
+                    Gastronomia
+                </a>
+                <a href="cultura.html">
+                    Cultura e Museus
+                </a>
+                <a href="roteiros.html">
+                    Roteiros
+                </a>
+                <a href="eventos.html">
+                    Eventos e Lazer
+                </a>
+                <a href="planejamento.html">
+                    Planejamento
+                </a>
+                <a href="dicas.html" aria-current="page">
+                    Dicas
+                </a>
+                <a href="contato.html">
+                    Contato
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="dic9-hero">
+            <div class="container dic9-hero-grade">
+
+                <div class="dic9-hero-texto">
+                    <span class="dic9-selo">
+                        GUIA DO VISITANTE
+                    </span>
+
+                    <h1>
+                        Tudo o que você precisa
+                        saber antes de explorar Curitiba
+                    </h1>
+
+                    <p>
+                        Descubra orientações sobre clima,
+                        transporte, segurança e passeios
+                        para aproveitar melhor sua visita.
+                    </p>
+
+                    <a href="#dicas"
+                       class="dic9-botao-claro">
+                        Conferir dicas ↓
+                    </a>
+                </div>
+
+                <div class="dic9-hero-quadro">
+                    <span class="dic9-quadro-icone">
+                        💡
+                    </span>
+
+                    <h2>Viaje com mais tranquilidade</h2>
+
+                    <p>
+                        Pequenos cuidados ajudam a transformar
+                        uma viagem em uma experiência melhor.
+                    </p>
+
+                    <div class="dic9-quadro-tags">
+                        <span>🚌 Transporte</span>
+                        <span>🌦️ Clima</span>
+                        <span>🛡️ Segurança</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dic9-intro container">
+            <span class="dic9-etiqueta">
+                DICAS IMPORTANTES
+            </span>
+
+            <h2>Prepare-se para conhecer Curitiba</h2>
+
+            <p>
+                Conhecer algumas características da cidade
+                pode facilitar seu passeio. Confira as dicas
+                abaixo e salve aquelas que forem mais úteis
+                para você.
+            </p>
+
+            <div class="dic9-resumo">
+                <article>
+                    <span>🌦️</span>
+                    <h3>Prepare-se para o clima</h3>
+                    <p>
+                        Leve roupas adequadas
+                        para diferentes temperaturas.
+                    </p>
+                </article>
+
+                <article>
+                    <span>🗺️</span>
+                    <h3>Organize os deslocamentos</h3>
+                    <p>
+                        Planeje como chegar
+                        aos pontos turísticos.
+                    </p>
+                </article>
+
+                <article>
+                    <span>📱</span>
+                    <h3>Consulte informações</h3>
+                    <p>
+                        Verifique horários e condições
+                        antes de sair.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="dicas" class="dic9-secao-dicas">
+            <div class="container">
+
+                <div class="dic9-titulo-secao">
+                    <span class="dic9-etiqueta">
+                        EXPLORE COM TRANQUILIDADE
+                    </span>
+
+                    <h2>Dicas para aproveitar a cidade</h2>
+
+                    <p>
+                        Utilize os filtros para encontrar
+                        orientações por categoria.
+                    </p>
+                </div>
+
+                <div class="dic9-filtros"
+                     role="group"
+                     aria-label="Filtrar dicas">
+
+                    <button type="button"
+                            class="dic9-filtro ativo"
+                            data-filtro="todos"
+                            aria-pressed="true">
+                        Todas
+                    </button>
+
+                    <button type="button"
+                            class="dic9-filtro"
+                            data-filtro="transporte"
+                            aria-pressed="false">
+                        🚌 Transporte
+                    </button>
+
+                    <button type="button"
+                            class="dic9-filtro"
+                            data-filtro="clima"
+                            aria-pressed="false">
+                        🌦️ Clima
+                    </button>
+
+                    <button type="button"
+                            class="dic9-filtro"
+                            data-filtro="cuidados"
+                            aria-pressed="false">
+                        🛡️ Cuidados
+                    </button>
+                </div>
+
+                <p id="dic9-resultado"
+                   class="dic9-resultado"
+                   aria-live="polite">
+                    6 dicas encontradas
+                </p>
+
+                <div class="dic9-grade">
+
+                    <article class="dic9-card card"
+                             data-categoria="transporte">
+
+                        <div class="dic9-card-icone">
+                            🚌
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            TRANSPORTE
+                        </span>
+
+                        <h3>Conheça o transporte público</h3>
+
+                        <p>
+                            Curitiba possui uma rede de ônibus
+                            que conecta diferentes regiões.
+                            Consulte linhas, trajetos e formas
+                            de pagamento antes de viajar.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito btn"
+                                data-dica="onibus"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                    <article class="dic9-card card"
+                             data-categoria="clima">
+
+                        <div class="dic9-card-icone">
+                            🌦️
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            CLIMA
+                        </span>
+
+                        <h3>Leve um agasalho</h3>
+
+                        <p>
+                            As temperaturas podem variar ao
+                            longo do dia. Ter um casaco
+                            disponível pode ajudar a evitar
+                            desconfortos durante o passeio.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito"
+                                data-dica="agasalho"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                    <article class="dic9-card card"
+                             data-categoria="cuidados">
+
+                        <div class="dic9-card-icone">
+                            🎒
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            CUIDADOS
+                        </span>
+
+                        <h3>Cuide dos seus pertences</h3>
+
+                        <p>
+                            Em locais movimentados,
+                            mantenha celular, documentos
+                            e objetos pessoais guardados
+                            com atenção.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito"
+                                data-dica="pertences"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                    <article class="dic9-card card"
+                             data-categoria="transporte">
+
+                        <div class="dic9-card-icone">
+                            📍
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            TRANSPORTE
+                        </span>
+
+                        <h3>Planeje suas rotas</h3>
+
+                        <p>
+                            Antes de sair, consulte a localização
+                            das atrações e organize passeios
+                            próximos para evitar deslocamentos
+                            desnecessários.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito"
+                                data-dica="rotas"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                    <article class="dic9-card card"
+                             data-categoria="clima">
+
+                        <div class="dic9-card-icone">
+                            ☂️
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            CLIMA
+                        </span>
+
+                        <h3>Confira a previsão do tempo</h3>
+
+                        <p>
+                            Se você pretende visitar parques
+                            e atrações ao ar livre,
+                            verifique a previsão do tempo
+                            e considere levar um guarda-chuva.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito"
+                                data-dica="chuva"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                    <article class="dic9-card card"
+                             data-categoria="cuidados">
+
+                        <div class="dic9-card-icone">
+                            🕒
+                        </div>
+
+                        <span class="dic9-card-tag">
+                            CUIDADOS
+                        </span>
+
+                        <h3>Confira horários de visitação</h3>
+
+                        <p>
+                            Museus e atrações podem ter
+                            horários específicos ou precisar
+                            de agendamento. Consulte os canais
+                            oficiais antes da visita.
+                        </p>
+
+                        <button type="button"
+                                class="dic9-favorito"
+                                data-dica="horarios"
+                                aria-pressed="false">
+                            ♡ Salvar dica
+                        </button>
+                    </article>
+
+                </div>
+
+                <div class="dic9-favoritos-resumo">
+                    <span>♡</span>
+
+                    <div>
+                        <strong>Minhas dicas favoritas</strong>
+
+                        <p id="dic9-total-favoritos"
+                           aria-live="polite">
+                            Nenhuma dica salva ainda.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dic9-tabela-secao">
+            <div class="container">
+
+                <div class="dic9-titulo-secao">
+                    <span class="dic9-etiqueta">
+                        PLANEJE SEU PASSEIO
+                    </span>
+
+                    <h2>Guia rápido para visitantes</h2>
+
+                    <p>
+                        Uma tabela para ajudar a organizar
+                        diferentes situações durante a viagem.
+                    </p>
+                </div>
+
+                <div class="dic9-tabela-rolagem">
+                    <table class="dic9-tabela">
+
+                        <caption class="dic9-legenda-tabela">
+                            Recomendações gerais para uma visita a Curitiba
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Situação</th>
+                                <th scope="col">O que verificar</th>
+                                <th scope="col">O que levar</th>
+                                <th scope="col">Dica extra</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    Passeio em parques
+                                </th>
+                                <td>
+                                    Clima e horário do parque
+                                </td>
+                                <td>
+                                    Água e calçado confortável
+                                </td>
+                                <td>
+                                    Planeje pausas durante o passeio
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Visita a museus
+                                </th>
+                                <td>
+                                    Ingressos e funcionamento
+                                </td>
+                                <td>
+                                    Documento e ingresso, se necessário
+                                </td>
+                                <td>
+                                    Consulte exposições disponíveis
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Passeio pelo centro
+                                </th>
+                                <td>
+                                    Rota e transporte
+                                </td>
+                                <td>
+                                    Celular carregado
+                                </td>
+                                <td>
+                                    Organize pontos próximos
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Dia de chuva
+                                </th>
+                                <td>
+                                    Previsão e opções cobertas
+                                </td>
+                                <td>
+                                    Guarda-chuva e agasalho
+                                </td>
+                                <td>
+                                    Considere atividades internas
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <p class="dic9-observacao-tabela">
+                    As informações são orientações gerais.
+                    Confirme horários, condições e regras
+                    diretamente com cada atração.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="dic9-faq container">
+            <div class="dic9-titulo-secao">
+                <span class="dic9-etiqueta">
+                    TIRE SUAS DÚVIDAS
+                </span>
+
+                <h2>Perguntas frequentes</h2>
+
+                <p>
+                    Algumas dúvidas comuns de quem
+                    está planejando conhecer Curitiba.
+                </p>
+            </div>
+
+            <div class="dic9-faq-lista">
+
+                <details class="dic9-pergunta">
+                    <summary>
+                        Qual é a melhor época para visitar Curitiba?
+                    </summary>
+                    <p>
+                        Curitiba pode ser visitada durante
+                        o ano todo. A escolha depende do
+                        tipo de passeio que você prefere.
+                        Consulte a previsão do tempo e as
+                        condições das atrações.
+                    </p>
+                </details>
+
+                <details class="dic9-pergunta">
+                    <summary>
+                        Preciso comprar ingresso para todos os lugares?
+                    </summary>
+                    <p>
+                        Não. A cidade possui espaços públicos
+                        e atrações com cobrança de ingresso.
+                        Consulte cada local para confirmar
+                        valores e regras de visitação.
+                    </p>
+                </details>
+
+                <details class="dic9-pergunta">
+                    <summary>
+                        É possível conhecer Curitiba sem carro?
+                    </summary>
+                    <p>
+                        Sim. É possível utilizar ônibus,
+                        transporte por aplicativo e caminhar
+                        em determinadas regiões. O melhor meio
+                        de transporte depende da distância
+                        entre as atrações.
+                    </p>
+                </details>
+
+                <details class="dic9-pergunta">
+                    <summary>
+                        Como posso organizar meus passeios?
+                    </summary>
+                    <p>
+                        Você pode utilizar as páginas
+                        Roteiros Turísticos e Planejamento
+                        do Curitiba em Rota para organizar
+                        lugares, datas e gastos.
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+        <section class="dic9-links-secao">
+            <div class="container">
+
+                <div class="dic9-titulo-secao">
+                    <span class="dic9-etiqueta">
+                        INFORMAÇÕES OFICIAIS
+                    </span>
+
+                    <h2>Onde consultar mais informações?</h2>
+
+                    <p>
+                        Confira informações atualizadas
+                        sobre transporte e turismo.
+                    </p>
+                </div>
+
+                <div class="dic9-links-grade">
+
+                    <a href="https://www.urbs.curitiba.pr.gov.br/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="dic9-link-card">
+
+                        <span>🚌</span>
+                        <h3>URBS</h3>
+
+                        <p>
+                            Informações sobre o transporte
+                            coletivo de Curitiba.
+                        </p>
+
+                        <strong>Visitar site oficial</strong>
+                    </a>
+
+                    <a href="https://turismo.curitiba.pr.gov.br/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="dic9-link-card">
+
+                        <span>🗺️</span>
+                        <h3>Turismo Curitiba</h3>
+
+                        <p>
+                            Informações turísticas
+                            e atrações da cidade.
+                        </p>
+
+                        <strong>Visitar site oficial</strong>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="dic9-final">
+            <div class="container">
+
+                <span class="dic9-etiqueta">
+                    CONTINUE SUA JORNADA
+                </span>
+
+                <h2>Pronto para explorar Curitiba?</h2>
+
+                <p>
+                    Agora que você conhece algumas dicas,
+                    aproveite para planejar seus próximos passeios.
+                </p>
+
+                <div class="dic9-links-finais">
+                    <a href="planejamento.html">
+                        Planeje sua Viagem
+                    </a>
+
+                    <a href="roteiros.html">
+                        Roteiros Turísticos
+                    </a>
+
+                    <a href="eventos.html">
+                        Eventos e Lazer
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Curitiba em Rota | Explore a cidade
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Organize sua viagem para Curitiba com checklist e planejamento de gastos.">
+    <title>Planeje sua Viagem | Curitiba em Rota</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScripts/planejamentos.js" defer></script>
+</head>
+
+<body class="pagina-planejamento">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">
+                    Pontos Turísticos
+                </a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html">Cultura e Museus</a>
+                <a href="roteiros.html">Roteiros</a>
+                <a href="eventos.html">Eventos e Lazer</a>
+                <a href="planejamento.html" aria-current="page">
+                    Planejamento
+                </a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="plan8-hero">
+            <div class="container plan8-hero-grade">
+
+                <div class="plan8-hero-texto">
+                    <span class="plan8-selo">
+                        ORGANIZE SUA VISITA
+                    </span>
+
+                    <h1>
+                        Sua viagem começa
+                        antes de sair de casa
+                    </h1>
+
+                    <p>
+                        Prepare seus itens, organize
+                        seus gastos e aproveite Curitiba
+                        com mais tranquilidade.
+                    </p>
+
+                    <a href="#organizador"
+                       class="plan8-botao-claro">
+                        Começar planejamento ↓
+                    </a>
+                </div>
+
+                <div class="plan8-hero-quadro">
+                    <span class="plan8-quadro-icone">
+                        🧳
+                    </span>
+
+                    <h2>Tudo em um só lugar</h2>
+
+                    <p>
+                        Um espaço para organizar
+                        os detalhes da sua viagem.
+                    </p>
+
+                    <div class="plan8-quadro-itens">
+                        <span>✓ Checklist</span>
+                        <span>✓ Orçamento</span>
+                        <span>✓ Planejamento</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="plan8-intro container">
+            <span class="plan8-etiqueta">
+                ANTES DE VIAJAR
+            </span>
+
+            <h2>
+                Uma viagem bem planejada faz diferença
+            </h2>
+
+            <p>
+                Organizar os itens necessários
+                e ter uma ideia dos gastos ajuda
+                a aproveitar melhor os passeios.
+                Use as ferramentas abaixo para
+                preparar sua visita a Curitiba.
+            </p>
+
+            <div class="plan8-beneficios">
+
+                <article>
+                    <span>📋</span>
+                    <h3>Não esqueça nada</h3>
+                    <p>
+                        Marque os itens que já
+                        preparou para a viagem.
+                    </p>
+                </article>
+
+                <article>
+                    <span>💰</span>
+                    <h3>Controle seus gastos</h3>
+                    <p>
+                        Faça uma estimativa do valor
+                        que pretende gastar.
+                    </p>
+                </article>
+
+                <article>
+                    <span>💾</span>
+                    <h3>Continue depois</h3>
+                    <p>
+                        Suas informações ficam
+                        salvas neste navegador.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="organizador" class="plan8-organizador">
+            <div class="container">
+
+                <div class="plan8-titulo-secao">
+                    <span class="plan8-etiqueta">
+                        MEU PLANEJAMENTO
+                    </span>
+
+                    <h2>Prepare sua viagem</h2>
+
+                    <p>
+                        Comece pela lista de preparação
+                        e depois organize seu orçamento.
+                    </p>
+                </div>
+
+                <div class="plan8-grade">
+
+                    <section class="plan8-painel"
+                             aria-labelledby="plan8-titulo-checklist">
+
+                        <div class="plan8-painel-topo">
+                            <span class="plan8-painel-icone">
+                                📋
+                            </span>
+
+                            <div>
+                                <h3 id="plan8-titulo-checklist">
+                                    Checklist de viagem
+                                </h3>
+                                <p>
+                                    Marque o que já está pronto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="plan8-progresso">
+
+                            <div class="plan8-progresso-texto">
+                                <strong>Seu progresso</strong>
+                                <span id="plan8-percentual">
+                                    0%
+                                </span>
+                            </div>
+
+                            <div class="plan8-barra">
+                                <div id="plan8-barra-preenchida"
+                                     class="plan8-barra-preenchida">
+                                </div>
+                            </div>
+
+                            <small id="plan8-contador">
+                                0 de 8 itens concluídos
+                            </small>
+                        </div>
+
+                        <div class="plan8-lista-checklist">
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="documentos">
+                                <span>
+                                    Separar documentos pessoais
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="transporte">
+                                <span>
+                                    Planejar o transporte
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="hospedagem">
+                                <span>
+                                    Verificar a hospedagem
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="roupas">
+                                <span>
+                                    Separar roupas e agasalho
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="clima">
+                                <span>
+                                    Conferir a previsão do tempo
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="ingressos">
+                                <span>
+                                    Verificar ingressos e horários
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="roteiro">
+                                <span>
+                                    Escolher lugares para visitar
+                                </span>
+                            </label>
+
+                            <label class="plan8-item">
+                                <input type="checkbox"
+                                       data-item="carregador">
+                                <span>
+                                    Levar carregador de celular
+                                </span>
+                            </label>
+
+                        </div>
+
+                        <form id="plan8-form-item"
+                              class="plan8-form-item">
+
+                            <label for="plan8-novo-item">
+                                Adicionar outro item
+                            </label>
+
+                            <div class="plan8-form-item-linha">
+                                <input type="text"
+                                       id="plan8-novo-item"
+                                       maxlength="80"
+                                       placeholder="Ex.: Levar guarda-chuva"
+                                       required>
+
+                                <button type="submit">
+                                    Adicionar
+                                </button>
+                            </div>
+
+                        </form>
+
+                        <div id="plan8-itens-extras"
+                             class="plan8-itens-extras">
+                        </div>
+
+                        <button type="button"
+                                id="plan8-limpar-checklist"
+                                class="plan8-botao-secundario">
+                            Desmarcar todos
+                        </button>
+
+                    </section>
+
+                    <section class="plan8-painel"
+                             aria-labelledby="plan8-titulo-orcamento">
+
+                        <div class="plan8-painel-topo">
+                            <span class="plan8-painel-icone">
+                                💰
+                            </span>
+
+                            <div>
+                                <h3 id="plan8-titulo-orcamento">
+                                    Meu orçamento
+                                </h3>
+
+                                <p>
+                                    Calcule uma estimativa
+                                    dos gastos da viagem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <form id="plan8-form-orcamento">
+
+                            <label for="plan8-transporte">
+                                Transporte (R$)
+                            </label>
+                            <input type="number"
+                                   id="plan8-transporte"
+                                   min="0"
+                                   max="1000000"
+                                   step="0.01"
+                                   placeholder="Ex.: 80">
+
+                            <label for="plan8-alimentacao">
+                                Alimentação (R$)
+                            </label>
+                            <input type="number"
+                                   id="plan8-alimentacao"
+                                   min="0"
+                                   max="1000000"
+                                   step="0.01"
+                                   placeholder="Ex.: 120">
+
+                            <label for="plan8-passeios">
+                                Passeios e ingressos (R$)
+                            </label>
+                            <input type="number"
+                                   id="plan8-passeios"
+                                   min="0"
+                                   max="1000000"
+                                   step="0.01"
+                                   placeholder="Ex.: 60">
+
+                            <label for="plan8-hospedagem">
+                                Hospedagem (R$)
+                            </label>
+                            <input type="number"
+                                   id="plan8-hospedagem"
+                                   min="0"
+                                   max="1000000"
+                                   step="0.01"
+                                   placeholder="Ex.: 250">
+
+                            <label for="plan8-outros">
+                                Outros gastos (R$)
+                            </label>
+                            <input type="number"
+                                   id="plan8-outros"
+                                   min="0"
+                                   max="1000000"
+                                   step="0.01"
+                                   placeholder="Ex.: 40">
+
+                            <button type="button"
+                                    id="plan8-calcular"
+                                    class="plan8-botao-calcular"
+                                    style="
+                                        display: block;
+                                        width: 100%;
+                                        background: #2d70b3;
+                                        color: white;
+                                        border: none;
+                                        border-radius: 9px;
+                                        padding: 15px;
+                                        margin-top: 25px;
+                                        font-size: 15px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                    ">
+                                🧮 Calcular gastos
+                            </button>
+
+                            <div class="plan8-total">
+                                <span>
+                                    Valor total estimado
+                                </span>
+
+                                <strong id="plan8-valor-total">
+                                    R$ 0,00
+                                </strong>
+
+                                <small>
+                                    Estimativa pessoal,
+                                    não representa preços oficiais.
+                                </small>
+                            </div>
+
+                            <button type="button"
+                                    id="plan8-limpar-orcamento"
+                                    class="plan8-botao-secundario">
+                                Limpar valores
+                            </button>
+
+                        </form>
+
+                    </section>
+
+                </div>
+
+                <p class="plan8-aviso-salvamento"
+                   id="plan8-status"
+                   role="status"
+                   aria-live="polite">
+                    Suas informações são salvas neste navegador.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="plan8-dicas container">
+            <div class="plan8-titulo-secao">
+                <span class="plan8-etiqueta">
+                    DICAS IMPORTANTES
+                </span>
+
+                <h2>
+                    Preparado para explorar Curitiba?
+                </h2>
+
+                <p>
+                    Algumas recomendações simples
+                    podem melhorar sua experiência.
+                </p>
+            </div>
+
+            <div class="plan8-dicas-grade">
+
+                <article class="plan8-dica">
+                    <span>🌦️</span>
+                    <h3>Esteja preparado para o clima</h3>
+                    <p>
+                        Curitiba pode apresentar
+                        mudanças de temperatura.
+                        Leve roupas adequadas.
+                    </p>
+                </article>
+
+                <article class="plan8-dica">
+                    <span>🗺️</span>
+                    <h3>Organize as atrações</h3>
+                    <p>
+                        Agrupe os lugares por região
+                        para facilitar o deslocamento.
+                    </p>
+                </article>
+
+                <article class="plan8-dica">
+                    <span>💳</span>
+                    <h3>Reserve um valor extra</h3>
+                    <p>
+                        Considere gastos inesperados
+                        e despesas que possam surgir.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="plan8-final">
+            <div class="container">
+
+                <span class="plan8-etiqueta">
+                    CONTINUE EXPLORANDO
+                </span>
+
+                <h2>
+                    Agora é hora de conhecer Curitiba
+                </h2>
+
+                <p>
+                    Seu planejamento está encaminhado.
+                    Descubra atrações e organize seus passeios.
+                </p>
+
+                <div class="plan8-links">
+                    <a href="roteiros.html">
+                        Roteiros Turísticos
+                    </a>
+
+                    <a href="eventos.html">
+                        Eventos e Lazer
+                    </a>
+
+                    <a href="pontos-turisticos.html">
+                        Pontos Turísticos
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Curitiba em Rota | Explore a cidade</p>
+    </footer>
+
+</body>
+</html>

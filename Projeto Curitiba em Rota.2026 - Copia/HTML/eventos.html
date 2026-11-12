@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra opções de eventos, cultura e lazer em Curitiba e organize sua programação.">
+    <title>Eventos e Lazer | Curitiba em Rota</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScripts/eventos.js" defer></script>
+</head>
+
+<body class="pagina-eventos">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html">Pontos Turísticos</a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html">Cultura e Museus</a>
+                <a href="roteiros.html">Roteiros</a>
+                <a href="eventos.html" aria-current="page">Eventos e Lazer</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="evt7-hero">
+            <div class="container evt7-hero-grade">
+
+                <div class="evt7-hero-texto">
+                    <span class="evt7-etiqueta-clara">
+                        VIVA CURITIBA
+                    </span>
+
+                    <h1>
+                        Sempre tem algo para fazer
+                        em Curitiba
+                    </h1>
+
+                    <p>
+                        Explore experiências culturais,
+                        passeios ao ar livre e atividades
+                        para aproveitar seu tempo livre.
+                    </p>
+
+                    <a href="#atividades" class="evt7-botao-claro">
+                        Descobrir atividades ↓
+                    </a>
+                </div>
+
+                <div class="evt7-hero-painel">
+                    <span class="evt7-painel-icone">📅</span>
+
+                    <span class="evt7-painel-etiqueta">
+                        SEU PRÓXIMO PASSEIO
+                    </span>
+
+                    <h2>O que vamos fazer hoje?</h2>
+
+                    <p>
+                        Escolha uma experiência e monte
+                        sua própria programação pela cidade.
+                    </p>
+
+                    <div class="evt7-painel-opcoes">
+                        <span>🎨 Cultura</span>
+                        <span>🌳 Natureza</span>
+                        <span>🎡 Lazer</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="evt7-introducao container">
+
+            <span class="evt7-etiqueta">
+                EXPERIÊNCIAS PELA CIDADE
+            </span>
+
+            <h2>Aproveite Curitiba do seu jeito</h2>
+
+            <p>
+                Seja para um passeio tranquilo, uma
+                atividade cultural ou um momento
+                especial com outras pessoas,
+                Curitiba oferece diferentes experiências.
+            </p>
+
+            <div class="evt7-resumo">
+                <div class="evt7-resumo-item">
+                    <span>🎭</span>
+                    <strong>Cultura</strong>
+                    <small>Arte, teatro e exposições</small>
+                </div>
+
+                <div class="evt7-resumo-item">
+                    <span>🌿</span>
+                    <strong>Ar livre</strong>
+                    <small>Parques e espaços naturais</small>
+                </div>
+
+                <div class="evt7-resumo-item">
+                    <span>🎠</span>
+                    <strong>Família</strong>
+                    <small>Experiências para diferentes idades</small>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="atividades" class="evt7-atividades">
+            <div class="container">
+
+                <div class="evt7-cabecalho">
+                    <span class="evt7-etiqueta">
+                        ESCOLHA SUA EXPERIÊNCIA
+                    </span>
+
+                    <h2>O que fazer em Curitiba?</h2>
+
+                    <p>
+                        Selecione uma categoria e descubra
+                        atividades para incluir no seu passeio.
+                    </p>
+                </div>
+
+                <div class="evt7-filtros"
+                     role="group"
+                     aria-label="Filtrar atividades">
+
+                    <button type="button"
+                            class="evt7-filtro ativo"
+                            data-filtro="todos"
+                            aria-pressed="true">
+                        Todas
+                    </button>
+
+                    <button type="button"
+                            class="evt7-filtro"
+                            data-filtro="cultura"
+                            aria-pressed="false">
+                        🎨 Cultura
+                    </button>
+
+                    <button type="button"
+                            class="evt7-filtro"
+                            data-filtro="ar-livre"
+                            aria-pressed="false">
+                        🌳 Ar livre
+                    </button>
+
+                    <button type="button"
+                            class="evt7-filtro"
+                            data-filtro="familia"
+                            aria-pressed="false">
+                        🎡 Família
+                    </button>
+                </div>
+
+                <p id="evt7-resultado"
+                   class="evt7-resultado"
+                   aria-live="polite">
+                    6 atividades encontradas
+                </p>
+
+                <div class="evt7-grade">
+
+                    <article class="evt7-card"
+                             data-categoria="cultura"
+                             data-id="museus">
+
+                        <div class="evt7-card-capa evt7-capa-cultura">
+                            <span class="evt7-card-simbolo">🎨</span>
+                            <span class="evt7-card-tag">CULTURA</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Visitar exposições de arte</h3>
+
+                            <p>
+                                Conheça espaços culturais,
+                                exposições e obras de artistas
+                                em museus da cidade.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Museus de Curitiba</span>
+                                <span>🎟️ Consulte ingressos</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="museus">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="evt7-card"
+                             data-categoria="ar-livre"
+                             data-id="barigui">
+
+                        <div class="evt7-card-capa evt7-capa-natureza">
+                            <span class="evt7-card-simbolo">🚶</span>
+                            <span class="evt7-card-tag">AR LIVRE</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Caminhada no Parque Barigui</h3>
+
+                            <p>
+                                Aproveite as áreas verdes
+                                e os caminhos do parque para
+                                caminhar e relaxar.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Parque Barigui</span>
+                                <span>🌳 Espaço público</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="barigui">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="evt7-card"
+                             data-categoria="familia"
+                             data-id="botanico">
+
+                        <div class="evt7-card-capa evt7-capa-familia">
+                            <span class="evt7-card-simbolo">🌷</span>
+                            <span class="evt7-card-tag">FAMÍLIA</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Passeio no Jardim Botânico</h3>
+
+                            <p>
+                                Uma oportunidade para conhecer
+                                os jardins, fotografar a estufa
+                                e aproveitar o espaço ao ar livre.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Jardim Botânico</span>
+                                <span>📷 Passeio e fotografia</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="botanico">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="evt7-card"
+                             data-categoria="cultura"
+                             data-id="teatro">
+
+                        <div class="evt7-card-capa evt7-capa-teatro">
+                            <span class="evt7-card-simbolo">🎭</span>
+                            <span class="evt7-card-tag">CULTURA</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Assistir a uma peça de teatro</h3>
+
+                            <p>
+                                Descubra a programação de
+                                espetáculos e apresentações
+                                nos teatros de Curitiba.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Teatros da cidade</span>
+                                <span>📅 Consulte a programação</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="teatro">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="evt7-card"
+                             data-categoria="ar-livre"
+                             data-id="tangua">
+
+                        <div class="evt7-card-capa evt7-capa-tangua">
+                            <span class="evt7-card-simbolo">🌅</span>
+                            <span class="evt7-card-tag">AR LIVRE</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Fim de tarde no Parque Tanguá</h3>
+
+                            <p>
+                                Aproveite o mirante e a paisagem
+                                para encerrar o dia em um
+                                dos parques conhecidos da cidade.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Parque Tanguá</span>
+                                <span>🌄 Paisagem e natureza</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="tangua">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="evt7-card"
+                             data-categoria="familia"
+                             data-id="passeio-publico">
+
+                        <div class="evt7-card-capa evt7-capa-passeio">
+                            <span class="evt7-card-simbolo">🦋</span>
+                            <span class="evt7-card-tag">FAMÍLIA</span>
+                        </div>
+
+                        <div class="evt7-card-corpo">
+                            <h3>Conhecer o Passeio Público</h3>
+
+                            <p>
+                                Visite um dos parques
+                                tradicionais de Curitiba,
+                                com áreas verdes e espaços
+                                para passear.
+                            </p>
+
+                            <div class="evt7-card-dados">
+                                <span>📍 Passeio Público</span>
+                                <span>🌿 Passeio ao ar livre</span>
+                            </div>
+
+                            <button type="button"
+                                    class="evt7-adicionar"
+                                    data-atividade="passeio-publico">
+                                + Adicionar à programação
+                            </button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="evt7-aviso">
+                    As atividades são sugestões de lazer.
+                    Confira datas, horários, ingressos e condições
+                    de visitação nos canais oficiais.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="minha-agenda" class="evt7-agenda">
+            <div class="container">
+
+                <div class="evt7-cabecalho">
+                    <span class="evt7-etiqueta">
+                        ORGANIZE SEU TEMPO LIVRE
+                    </span>
+
+                    <h2>Minha programação</h2>
+
+                    <p>
+                        Selecione uma atividade, escolha
+                        a data e o horário e salve
+                        seus planos para Curitiba.
+                    </p>
+                </div>
+
+                <div class="evt7-agenda-grade">
+
+                    <form id="evt7-formulario"
+                          class="evt7-formulario">
+
+                        <h3>Planejar atividade</h3>
+
+                        <label for="evt7-atividade">
+                            Atividade
+                        </label>
+
+                        <select id="evt7-atividade" required>
+                            <option value="">
+                                Selecione uma atividade
+                            </option>
+                            <option value="museus">
+                                Visitar exposições de arte
+                            </option>
+                            <option value="barigui">
+                                Caminhada no Parque Barigui
+                            </option>
+                            <option value="botanico">
+                                Passeio no Jardim Botânico
+                            </option>
+                            <option value="teatro">
+                                Assistir a uma peça de teatro
+                            </option>
+                            <option value="tangua">
+                                Fim de tarde no Parque Tanguá
+                            </option>
+                            <option value="passeio-publico">
+                                Conhecer o Passeio Público
+                            </option>
+                        </select>
+
+                        <div class="evt7-formulario-linha">
+                            <div>
+                                <label for="evt7-data">Data</label>
+                                <input
+                                    type="date"
+                                    id="evt7-data"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="evt7-horario">Horário</label>
+                                <input
+                                    type="time"
+                                    id="evt7-horario"
+                                    required>
+                            </div>
+                        </div>
+
+                        <label for="evt7-observacao">
+                            Observações (opcional)
+                        </label>
+
+                        <textarea
+                            id="evt7-observacao"
+                            rows="3"
+                            maxlength="300"
+                            placeholder="Ex.: Convidar amigos e verificar os horários."></textarea>
+
+                        <button type="submit"
+                                class="evt7-salvar">
+                            Salvar na minha programação
+                        </button>
+
+                        <p id="evt7-mensagem"
+                           class="evt7-mensagem"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                    <div class="evt7-minha-lista">
+                        <div class="evt7-lista-topo">
+                            <div>
+                                <span class="evt7-etiqueta">
+                                    SEUS PLANOS
+                                </span>
+                                <h3>Próximas atividades</h3>
+                            </div>
+
+                            <span id="evt7-total"
+                                  class="evt7-total">
+                                0
+                            </span>
+                        </div>
+
+                        <div id="evt7-lista-salvos"
+                             class="evt7-lista-salvos"
+                             aria-live="polite">
+
+                            <p class="evt7-lista-vazia">
+                                Sua programação está vazia.
+                                Escolha uma atividade para começar!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="evt7-dicas container">
+            <div class="evt7-dicas-texto">
+                <span class="evt7-etiqueta">
+                    ANTES DO PASSEIO
+                </span>
+
+                <h2>Planeje para aproveitar melhor</h2>
+
+                <p>
+                    Algumas atitudes simples ajudam
+                    a tornar a experiência mais tranquila.
+                </p>
+            </div>
+
+            <div class="evt7-dicas-grade">
+                <article class="evt7-dica">
+                    <span>🎟️</span>
+                    <h3>Consulte ingressos</h3>
+                    <p>
+                        Espetáculos e exposições podem
+                        ter ingressos ou exigir agendamento.
+                    </p>
+                </article>
+
+                <article class="evt7-dica">
+                    <span>🌤️</span>
+                    <h3>Confira o clima</h3>
+                    <p>
+                        Verifique a previsão do tempo
+                        antes de realizar atividades externas.
+                    </p>
+                </article>
+
+                <article class="evt7-dica">
+                    <span>📍</span>
+                    <h3>Organize o trajeto</h3>
+                    <p>
+                        Pesquise como chegar ao local
+                        e planeje o deslocamento.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="evt7-final">
+            <div class="container">
+                <span class="evt7-etiqueta">
+                    CONTINUE EXPLORANDO
+                </span>
+
+                <h2>Curitiba tem muito mais para descobrir</h2>
+
+                <p>
+                    Conheça outros lugares e monte
+                    novos passeios usando nosso guia.
+                </p>
+
+                <div class="evt7-links-finais">
+                    <a href="parques.html">Parques</a>
+                    <a href="cultura.html">Cultura e Museus</a>
+                    <a href="roteiros.html">Roteiros Turísticos</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Curitiba em Rota | Explore a cidade</p>
+    </footer>
+
+</body>
+</html>

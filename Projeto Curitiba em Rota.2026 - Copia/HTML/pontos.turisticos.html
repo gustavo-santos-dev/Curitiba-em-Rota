@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os principais pontos turísticos, culturais e históricos de Curitiba.">
+
+    <title>Pontos Turísticos | Curitiba em Rota</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScripts/pontos.turisticos.js" defer></script>
+</head>
+
+<body class="pagina-turismo">
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+
+            <a href="index.html" class="logo">
+                Curitiba <span>em Rota</span>
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="parques.html">Parques</a>
+                <a href="pontos.turisticos.html" aria-current="page">Pontos Turísticos</a>
+                <a href="gastronomia.html">Gastronomia</a>
+                <a href="cultura.html">Cultura e Museus</a>
+                <a href="roteiros.html">Roteiros Turísticos</a>
+                <a href="eventos.html">Eventos e Lazer</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="tour-hero">
+            <div class="container">
+
+                <p class="tour-etiqueta">
+                    CULTURA, HISTÓRIA E TURISMO
+                </p>
+
+                <h1>Curitiba tem histórias para contar.</h1>
+
+                <p class="tour-descricao">
+                    Descubra lugares icônicos, construções históricas,
+                    museus e experiências que fazem parte da
+                    identidade de Curitiba.
+                </p>
+
+                <a href="#atracoes" class="tour-botao">
+                    Explorar atrações →
+                </a>
+
+            </div>
+        </section>
+
+        <section id="atracoes" class="tour-destinos container">
+
+            <div class="tour-cabecalho">
+
+                <p class="tour-subetiqueta">EXPLORE A CIDADE</p>
+
+                <h2>Lugares para conhecer</h2>
+
+                <p>
+                    Conheça 14 atrações turísticas que combinam
+                    cultura, história, arquitetura e belas paisagens.
+                    Descubra o que torna cada lugar especial.
+                </p>
+
+            </div>
+
+            <div class="tour-filtros" role="group" aria-label="Filtrar pontos turísticos">
+
+                <button class="tour-filtro ativo" type="button"
+                    data-filtro="todos" aria-pressed="true">
+                    Todos
+                </button>
+
+                <button class="tour-filtro" type="button"
+                    data-filtro="cultura" aria-pressed="false">
+                    Cultura
+                </button>
+
+                <button class="tour-filtro" type="button"
+                    data-filtro="historia" aria-pressed="false">
+                    História
+                </button>
+
+                <button class="tour-filtro" type="button"
+                    data-filtro="arquitetura" aria-pressed="false">
+                    Arquitetura
+                </button>
+
+                <button class="tour-filtro" type="button"
+                    data-filtro="natureza" aria-pressed="false">
+                    Natureza
+                </button>
+
+            </div>
+
+            <p id="tour-resultado" class="tour-resultado" aria-live="polite">
+                14 atrações encontradas
+            </p>
+
+            <div class="tour-grade">
+
+                <article class="tour-cartao" data-categorias="cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Museu+Oscar+Niemeyer+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/images.mon.jpg"
+                            alt="Museu Oscar Niemeyer" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>ARTE E ARQUITETURA</span>
+                            <h3>Museu Oscar Niemeyer</h3>
+                            <p>
+                                Conhecido como Museu do Olho,
+                                destaca-se por sua arquitetura
+                                marcante e exposições de arte.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Opera+de+Arame+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/opera-de-arame.pjg.png"
+                            alt="Ópera de Arame" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>CULTURA E PAISAGENS</span>
+                            <h3>Ópera de Arame</h3>
+                            <p>
+                                Um dos cartões-postais de Curitiba,
+                                conhecido pela estrutura metálica,
+                                lago e paisagens naturais.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Bondinho+Rua+XV+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/bondinho.jpg"
+                            alt="Bonde da Rua XV" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>HISTÓRIA E TRADIÇÃO</span>
+                            <h3>Bonde da Rua XV</h3>
+                            <p>
+                                Um símbolo histórico do centro de Curitiba,
+                                localizado no tradicional calçadão da Rua XV.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="natureza arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Jardim+Botanico+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/Jardim botanico.png"
+                            alt="Jardim Botânico de Curitiba" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>NATUREZA E ARQUITETURA</span>
+                            <h3>Jardim Botânico</h3>
+                            <p>
+                                Famoso por sua estufa de vidro,
+                                jardins geométricos e paisagens que encantam
+                                turistas e moradores.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Torre+Panoramica+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/Torre.panoramica.jpg"
+                            alt="Torre Panorâmica de Curitiba" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>VISTA PANORÂMICA</span>
+                            <h3>Torre Panorâmica</h3>
+                            <p>
+                                Um mirante que oferece uma vista
+                                de 360 graus da cidade, ideal para
+                                observar Curitiba do alto.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia cultura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Largo+da+Ordem+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/largo da ordem.jpg"
+                            alt="Largo da Ordem" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>CENTRO HISTÓRICO</span>
+                            <h3>Largo da Ordem</h3>
+                            <p>
+                                Região histórica com construções antigas,
+                                espaços culturais e a tradicional
+                                feira de artesanato aos domingos.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Paco+da+Liberdade+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/paçodaliberdade.jpg"
+                            alt="Paço da Liberdade" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>HISTÓRIA E CULTURA</span>
+                            <h3>Paço da Liberdade</h3>
+                            <p>
+                                Antiga sede da Prefeitura de Curitiba,
+                                hoje é um espaço cultural que preserva
+                                a arquitetura histórica.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Teatro+Guaira+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/teatro.guaira.jpg"
+                            alt="Teatro Guaíra" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>ARTE E ESPETÁCULOS</span>
+                            <h3>Teatro Guaíra</h3>
+                            <p>
+                                Um dos principais espaços culturais do Paraná,
+                                palco de apresentações de teatro,
+                                dança e música.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+24+Horas+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/rua24horas.jpg"
+                            alt="Rua 24 Horas" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>GASTRONOMIA E TURISMO</span>
+                            <h3>Rua 24 Horas</h3>
+                            <p>
+                                Galeria comercial conhecida por seus
+                                arcos metálicos, relógios e opções
+                                de gastronomia no centro.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia cultura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Museu+Paranaense+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/museu-paranaense.jpg"
+                            alt="Museu Paranaense" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>HISTÓRIA E PATRIMÔNIO</span>
+                            <h3>Museu Paranaense</h3>
+                            <p>
+                                Um espaço dedicado à preservação
+                                e divulgação da história, da arqueologia
+                                e da cultura paranaense.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia cultura arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Memorial+Ucraniano+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/Memorial.ucraniano02.jpg"
+                            alt="Memorial Ucraniano" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>CULTURA E TRADIÇÃO</span>
+                            <h3>Memorial Ucraniano</h3>
+                            <p>
+                                Localizado no Parque Tingui,
+                                homenageia a imigração ucraniana
+                                com construções tradicionais de madeira.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="historia arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Catedral+Basilica+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/catedral.basilica.jpg"
+                            alt="Catedral Basílica de Curitiba" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>ARQUITETURA HISTÓRICA</span>
+                            <h3>Catedral Basílica</h3>
+                            <p>
+                                Localizada na Praça Tiradentes,
+                                destaca-se por sua arquitetura neogótica
+                                e importância histórica.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="natureza arquitetura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Universidade+Livre+do+Meio+Ambiente+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/Unilivre,jpg.jpg"
+                            alt="Universidade Livre do Meio Ambiente" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>NATUREZA E ARQUITETURA</span>
+                            <h3>Unilivre</h3>
+                            <p>
+                                Localizada no Bosque Zaninelli,
+                                combina uma estrutura de madeira
+                                com lago e vegetação.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="tour-cartao" data-categorias="natureza cultura">
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Bosque+Alemao+Curitiba"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <img src="../Imagem/bosque-alemao.jpg"
+                            alt="Bosque Alemão" loading="lazy">
+
+                        <div class="tour-cartao-conteudo">
+                            <span>NATUREZA E TRADIÇÃO</span>
+                            <h3>Bosque Alemão</h3>
+                            <p>
+                                Homenageia a cultura alemã
+                                com a trilha de João e Maria,
+                                a Torre dos Filósofos e áreas verdes.
+                            </p>
+                            <strong>Ver localização →</strong>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="tour-final">
+
+            <div class="container">
+
+                <p class="tour-subetiqueta">
+                    PLANEJE SUA EXPERIÊNCIA
+                </p>
+
+                <h2>Dicas para explorar Curitiba</h2>
+
+                <p>
+                    Aproveite melhor seu passeio com algumas
+                    recomendações para conhecer a cidade.
+                </p>
+
+                <div class="tour-dicas">
+
+                    <article class="tour-dica">
+                        <h3>Planeje sua visita</h3>
+                        <p>
+                            Confira os horários de funcionamento,
+                            ingressos e regras de cada atração.
+                        </p>
+                    </article>
+
+                    <article class="tour-dica">
+                        <h3>Explore a cultura</h3>
+                        <p>
+                            Conheça os museus, monumentos e espaços
+                            históricos que fazem parte da cidade.
+                        </p>
+                    </article>
+
+                    <article class="tour-dica">
+                        <h3>Registre momentos</h3>
+                        <p>
+                            Aproveite os mirantes, construções históricas
+                            e paisagens para tirar belas fotografias.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Curitiba em Rota | Explore a cidade</p>
+    </footer>
+
+</body>
+</html>
