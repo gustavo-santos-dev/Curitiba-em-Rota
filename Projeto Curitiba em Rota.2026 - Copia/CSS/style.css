@@ -5691,3 +5691,33 @@ summary:focus-visible {
     background-color: #e2eaf3;
     color: #173b5c;
 }
+.btn-explorar-pontos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    color: #174b78;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-explorar-pontos:hover {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.btn-explorar-pontos:visited {
+    color: #174b78;
+}
+
+.btn-explorar-pontos:visited:hover {
+    color: #ffffff;
+}
